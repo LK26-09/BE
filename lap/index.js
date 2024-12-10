@@ -1,10 +1,13 @@
-const arr=[1, 2, 3, 4, 5, 6]
+function fetchData( callback){
+  setTimeout(()=>{
+    console.log("du lieu da duojc lay");
+    callback("du lieu da duoc lay")
 
 
-//chuyen mang thanh gia tri x2
-function convertArray(array){
-      return array.map(num=>{
-        return num*2// Excutation
-    })
+  },1000)
 }
-console.log(convertArray(arr)); 
+function processdata(data){
+  console.log("xu ly du lieu ",data);
+  
+}
+fetchData(processdata);
